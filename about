@@ -1,0 +1,51 @@
+🧩 COMPONENTS:
+
+Arduino UNO
+Flex Sensors (2) OR Pressure Sensors (FSR) (2)
+10k Resistors (2)
+Buzzer
+Jumper Wires
+Breadboard
+Foam/Backrest support
+USB Cable
+
+🔗 Connections (WRITE THIS IN FILE)
+Sensor 1 (Upper Back):
+- One end → 5V
+- Other end → A0
+- 10k resistor from A0 → GND
+
+Sensor 2 (Lower Back):
+- One end → 5V
+- Other end → A1
+- 10k resistor from A1 → GND
+
+Buzzer:
+- Positive → Pin 8
+- Negative → GND
+
+⚙️ Calibration (IMPORTANT)
+1. Upload code
+2. Open Serial Monitor
+3. Sit straight → note values
+4. Slouch → note values
+5. Set threshold between both readings
+
+🛠️ Steps to Build (WRITE THIS)
+1. Connect both sensors using voltage divider circuit
+2. Connect buzzer to pin 8
+3. Upload Arduino code
+4. Place sensors on upper and lower back area
+5. Fix sensors inside foam/backrest
+6. Power Arduino using USB
+7. Test posture detection
+
+🔁 Working
+Sensors continuously monitor back position. When incorrect posture is detected, values drop below threshold and buzzer alerts the user. When posture is correct, buzzer turns OFF.
+
+📈 Future Improvements
+Bluetooth alerts
+Mobile app integration
+Vibration motor instead of buzzer
+Data tracking system
+AI posture detection
